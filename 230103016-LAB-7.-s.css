@@ -1,0 +1,65 @@
+       body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 70%;
+            border: 2px solid white;
+        }
+
+        #container {
+            text-align: center;
+        }
+
+        #output {
+            border: 2px solid black;
+            min-height: 40px;
+            text-align: right;
+            font-weight: bold;
+            font-size: 20px;
+            width: 550px;
+            color: white;
+        }
+
+        #ss {
+            border-radius: 30%;
+            background-color: purple;
+            color: white;
+            width: 180px;
+            height: 40px;
+        }
+
+        .floated {
+            float: left;
+            margin-right: 10px;
+            width: 70px;
+            height: 40px;
+        }
+
+        .space {
+            margin-right: 15px;
+        }
+
+        .and-Row {
+            margin-right: 7px;
+            width: 125px;
+            height: 40px;
+        }
+
+        .and-Row.wide {
+            width: 150px;
+        }
+
+        .and-Row.very-wide {
+            width: 260px;
+        }
+

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="230103016-LAB-7.-s.css" rel="stylesheet">
+    <script src="230103016-LAB-7.-j.js"></script>
+    <title>Binary Calculator</title>
+   
+</head>
+<body>
+    <div id="wrapper">
+        <div id="container">
+            <h1>Binary Calculator</h1>
+            <input type="text" id="output" disabled>
+            <br><br>
+
+            <div id="er">
+                <input type="radio" name="number-system" value="binary-only" id="binary-only">
+                <label for="binary-only">Binary only</label>
+
+                <input type="radio" name="number-system" value="octal-only" id="octal-only">
+                <label for="octal-only">Octal only</label>
+
+                <input type="radio" name="number-system" value="binary-decimal" id="binary-decimal">
+                <label for="binary-decimal" class="space">Binary and Decimal</label>
+
+                <button id="ss" class="space">Stepwise explanation</button>
+                <br><br>
+
+                <button class="floated" onclick="input('0')">0</button>
+                <button class="floated" onclick="input('1')">1</button>
+                <button class="floated" style="width: 125px;" onclick="calculate()">=</button>
+                <button class="floated" style="width: 125px;" onclick="del()">Delete</button>
+                <button class="floated" style="width: 125px;" onclick="reset()">Reset</button>
+                <br><br><br>
+
+                <button class="and-Row wide" onclick="input('&')">Bitwise AND</button>
+                <button class="and-Row" onclick="input('|')">Bitwise OR</button>
+                <button class="and-Row">Prev Op.</button>
+                <button class="and-Row">Next Op.</button>
+                <br><br>
+
+                <button class="and-Row wide" onclick="input('^')">Bitwise XOR</button>
+                <button class="and-Row" onclick="bitwiseNot()">Bitwise NOT</button>
+                <button class="and-Row">First Op.</button>
+                <button class="and-Row">Last Op.</button>
+                <br><br>
+
+                <button class="and-Row wide" onclick="input('<<')">Left Shift</button>
+                <button class="and-Row" onclick="input('>>')">Right Shift</button>
+                <button class="and-Row very-wide" onclick="input('>>>')">Unsigned Right Shift</button>
+                <br><br>
+
+                <button class="and-Row wide" onclick="input('~')">1's Complement</button>
+                <button class="and-Row" onclick="twosComplement()">2's Complement</button>
+                <button class="and-Row" onclick="input('*')">Multiplication</button>
+                <button class="and-Row" onclick="input('/')">Division</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
+
